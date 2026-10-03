@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sule Pharmacy Academy</title>
+
+    <meta name="description"
+        content="Sule Pharmacy Academy - Pharmacy notes, MCQs, drug information and study materials for pharmacy students.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            💊 Sule Pharmacy Academy
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#notes">Pharmacy Notes</a>
+            <a href="#mcqs">MCQs</a>
+            <a href="#drugs">Drug Information</a>
+            <a href="#materials">Study Materials</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="welcome">WELCOME TO</p>
+
+                <h1>
+                    Sule Pharmacy Academy
+                </h1>
+
+                <h2>
+                    Learn Pharmacy. Practice More. Become Better.
+                </h2>
+
+                <p>
+                    A learning platform for pharmacy students providing
+                    pharmacy notes, MCQs, drug information and useful
+                    study materials.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#notes" class="btn">
+                        📚 Start Learning
+                    </a>
+
+                    <a href="#mcqs" class="btn secondary">
+                        📝 Practice MCQs
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="search-section">
+
+            <h2>🔎 Search Pharmacy Resources</h2>
+
+            <p>
+                Find notes, drugs, MCQs and study materials.
+            </p>
+
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="Search pharmacy topics..."
+                onkeyup="searchContent()">
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                What You Can Find Here
+            </h2>
+
+            <div class="cards">
+
+                <div class="card" id="notes">
+
+                    <div class="icon">📚</div>
+
+                    <h3>Pharmacy Notes</h3>
+
+                    <p>
+                        Simple and organized notes for pharmacy
+                        students and exam preparation.
+                    </p>
+
+                    <a href="#">Explore Notes →</a>
+
+                </div>
+
+
+                <div class="card" id="mcqs">
+
+                    <div class="icon">📝</div>
+
+                    <h3>MCQs</h3>
+
+                    <p>
+                        Practice pharmacy multiple-choice questions
+                        and prepare for university and exit exams.
+                    </p>
+
+                    <a href="#">Practice MCQs →</a>
+
+                </div>
+
+
+                <div class="card" id="drugs">
+
+                    <div class="icon">💊</div>
+
+                    <h3>Drug Information</h3>
+
+                    <p>
+                        Learn drug classes, mechanisms of action,
+                        indications, adverse effects and more.
+                    </p>
+
+                    <a href="#">View Drugs →</a>
+
+                </div>
+
+
+                <div class="card" id="materials">
+
+                    <div class="icon">🎓</div>
+
+                    <h3>Study Materials</h3>
+                    <p>
+                        Access useful resources to improve your
+                        pharmacy knowledge and exam preparation.
+                    </p>
+
+                    <a href="#">View Materials →</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POPULAR SUBJECTS ================= -->
+
+        <section class="subjects">
+
+            <h2 class="section-title">
+                📖 Popular Pharmacy Subjects
+            </h2>
+
+            <div class="subject-list">
+
+                <div>💊 Pharmacology</div>
+                <div>🧪 Pharmaceutical Chemistry</div>
+                <div>📦 Pharmaceutics</div>
+                <div>🧑‍⚕️ Clinical Pharmacy</div>
+                <div>🏥 Pharmacotherapy</div>
+                <div>📊 Pharmacy Administration</div>
+                <div>🔬 Microbiology</div>
+                <div>🧬 Biochemistry</div>
+                <div>📋 Research Methodology</div>
+                <div>⚕️ Toxicology</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LATEST RESOURCES ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                🆕 Latest Resources
+            </h2>
+
+            <div class="latest">
+
+                <article>
+                    <span>NEW</span>
+                    <h3>Postmenopausal Therapy</h3>
+                    <p>
+                        Study menopause, MHT, symptoms and treatment.
+                    </p>
+                    <a href="#">Read More →</a>
+                </article>
+
+
+                <article>
+                    <span>NEW</span>
+                    <h3>APH Pharmacotherapy</h3>
+                    <p>
+                        Learn important pharmacotherapy concepts
+                        related to antepartum hemorrhage.
+                    </p>
+                    <a href="#">Read More →</a>
+                </article>
+
+
+                <article>
+                    <span>MCQ</span>
+                    <h3>Pharmacology Practice Questions</h3>
+                    <p>
+                        Test your knowledge with pharmacy MCQs.
+                    </p>
+                    <a href="#">Start Quiz →</a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about">
+
+            <div>
+
+                <h2>About Sule Pharmacy Academy</h2>
+
+                <p>
+                    Sule Pharmacy Academy is an educational platform
+                    created to help pharmacy students learn difficult
+                    concepts in a simple and understandable way.
+                </p>
+
+                <p>
+                    Our goal is to provide organized pharmacy notes,
+                    practice questions, drug information and useful
+                    educational resources.
+                </p>
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    To make pharmacy education easier, clearer and
+                    more accessible to students.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact">
+
+            <h2>📞 Contact Us</h2>
+
+            <p>
+                Have a question, suggestion or study resource?
+            </p>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <textarea
+                    placeholder="Write your message..."
+                    rows="5"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+     <footer>
+
+        <h2>💊 Sule Pharmacy Academy</h2>
+
+        <p>
+            Learn • Practice • Improve • Become a Better Pharmacist
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#notes">Notes</a>
+            <a href="#mcqs">MCQs</a>
+            <a href="#drugs">Drugs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Sule Pharmacy Academy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
